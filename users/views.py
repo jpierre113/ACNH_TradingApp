@@ -51,11 +51,6 @@ with urllib.request.urlopen(the_url) as url:
     data = json.loads(url.read().decode(), encoding='utf-8')
     #print(data)
 
-"""
-for row in data:
-    print(row)
-    print(data[row].image_uri)
-"""
 images = []
 for r in data.values():
     for row in r:
