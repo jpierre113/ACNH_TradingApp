@@ -9,6 +9,8 @@
           <p class="text-secondary">{{ user.email }}</p>
         </div>
       </div>
+      <h1>What I am trading: </h1>
+      <a class="btn btn-primary" href="{% url 'trading' %}" role="button">Add Items </a>
       <form method="POST" enctype="multipart/form-data">
         {% csrf_token %}
         <fieldset class="form-group">

@@ -20,7 +20,7 @@
 </head>
 <body>
     <header class="site-header">
-      <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
+      <nav class="navbar navbar-expand-md navbar-dark bg-green fixed-top">
         <div class="container">
           <a class="navbar-brand mr-4" href="{% url 'test-home' %}">Django Blog</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,6 +57,7 @@
           {% endif %}
           {% block content %}{% endblock %}
         </div>
+        {% if show_sidebar %}
         <div class="col-md-4">
           <div class="content-section">
             <h3>Our Sidebar</h3>
@@ -70,6 +71,7 @@
             </p>
           </div>
         </div>
+        {% endif %}
       </div>
     </main>
 
