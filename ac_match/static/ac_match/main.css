@@ -116,7 +116,7 @@ body {
   }
   .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
     color: #FFFDEE;
-    background-color: #C3E8BD;
+    background-color: #FFAD86;
     border-color: #136F63; /*set the color you want here*/
   }
   .trade_check{

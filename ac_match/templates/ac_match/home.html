@@ -10,6 +10,7 @@
             </div> 
             <h4><a class="article-title" href="{% url 'post-detail' post.id %}">{{ post.title }}</a></h4>
             <p class="article-content">{{ post.content }}</p>
+            
             <h5>I'm trading: </h5>
             <img src= '{{post.author.last_name}}'>
           </div> 
