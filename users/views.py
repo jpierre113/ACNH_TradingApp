@@ -3,6 +3,8 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from .forms import UserRegisterForm, UserUpdateForm, ProfileUpdateForm
 import urllib.request, json 
+import random
+
 
 def register(request):
     if request.method == 'POST':
@@ -50,11 +52,24 @@ with urllib.request.urlopen(the_url) as url:
     #print(data)
 
 """
-for row, key in data:
+for row in data:
     print(row)
-    print(row['image_uri'])
+    print(data[row].image_uri)
 """
+images = []
+for r in data.values():
+    for row in r:
+        images.append(row["image_uri"])
+        #print(row["image_uri"])
+
+random.shuffle(images)
+context = {
+    'images': images[:30],
+    'images2': images[30:60],
+    'images3': images[60:90]
+}
+#print(images)
 @login_required
-def add_trading(request):
+def trading(request):
     print("IN HERE!!!!")
-    return render(request, 'users/trading.html')
+    return render(request, 'users/trading.html', context)
