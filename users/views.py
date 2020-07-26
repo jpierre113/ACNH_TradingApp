@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from .forms import UserRegisterForm, UserUpdateForm, ProfileUpdateForm
-
+import urllib.request, json 
 
 def register(request):
     if request.method == 'POST':
@@ -40,3 +40,21 @@ def profile(request):
     }
 
     return render(request, 'users/profile.html', context)
+
+print("IN VIEWSSSS")
+the_url = 'http://acnhapi.com/v1/houseware'
+#response = urllib.urlopen(url)
+#data = json.loads(response.read())
+with urllib.request.urlopen(the_url) as url:
+    data = json.loads(url.read().decode(), encoding='utf-8')
+    #print(data)
+
+"""
+for row, key in data:
+    print(row)
+    print(row['image_uri'])
+"""
+@login_required
+def add_trading(request):
+    print("IN HERE!!!!")
+    return render(request, 'users/trading.html')

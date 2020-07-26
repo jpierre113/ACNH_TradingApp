@@ -12,8 +12,8 @@ body {
     margin: 0;
   }
   
-  .bg-steel {
-    background-color: #5f788a;
+  .bg-green {
+    background-color: green;
   }
   
   .site-header .navbar-nav .nav-link {

@@ -18,11 +18,12 @@ posts = [
 
 def home(request):
     context = {
-        'posts': Post.objects.all()
+        'posts': Post.objects.all(),
+        'show_sidebar': True
     }
     return render(request, 'ac_match/home.html', context)
 
 
 
 def about(request):
-    return render(request, 'ac_match/about.html', {'title': 'About'})
+    return render(request, 'ac_match/about.html', {'title': 'About', 'show_sidebar': False})
