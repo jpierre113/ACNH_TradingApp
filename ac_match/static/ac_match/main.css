@@ -1,12 +1,26 @@
 body {
-    background: #FFCAB1;
+    background: #FFDECE;
     color: #333333;
     margin-top: 5rem;
-    font-family: 'Wendy One', sans-serif;
+    font-family: 'Nunito', sans-serif;
   }
-  
-  h1, h2, h3, h4, h5, h6 {
+
+  h1, h4 {
     color: #444444;
+    font-weight: 600;
+    font-family: 'Nunito', sans-serif;
+  }
+
+ h2, h3, h5, h6 {
+    color: #444444;
+    font-weight: 400;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  p {
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    padding: 0px 0px 40px 0px;
   }
   
   ul {
@@ -16,13 +30,17 @@ body {
   .bg-green {
     background-color: #C3E8BD;
   }
+
+  mr-4{
+    background-color: #136F63;
+  }
   
   .site-header .navbar-nav .nav-link {
     color: #136F63;
   }
   
   .site-header .navbar-nav .nav-link:hover {
-    color: #ffffff;
+    color: #FFAD86;
   }
   
   .site-header .navbar-nav .nav-link.active {
@@ -30,10 +48,10 @@ body {
   }
   
   .content-section {
-    background: #ffffff;
+    background: #FFFDEE;
     padding: 10px 20px;
-    border: 1px solid #dddddd;
-    border-radius: 3px;
+    border: 2px solid #C3E8BD;
+    border-radius: 25px;
     margin-bottom: 20px;
   }
   
@@ -42,7 +60,7 @@ body {
   }
   
   a.article-title:hover {
-    color: #C3E8BD;
+    color: #9CD393;
     text-decoration: none;
   }
   
@@ -97,7 +115,7 @@ body {
     border-color: #136F63;
   }
   .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
-    color: #fff;
+    color: #FFFDEE;
     background-color: #C3E8BD;
     border-color: #136F63; /*set the color you want here*/
   }
