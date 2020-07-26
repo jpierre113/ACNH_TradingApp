@@ -16,6 +16,12 @@ body {
     font-weight: 400;
     font-family: 'Nunito', sans-serif;
   }
+
+  p {
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    padding: 0px 0px 40px 0px;
+  }
   
   ul {
     margin: 0;
