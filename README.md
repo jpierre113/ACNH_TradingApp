@@ -2,7 +2,7 @@
 
 An Animal Crossing New Horizons trading application
 
-##Installation
+## Installation
 - In terminal, create a folder in any desired location of your computer
 - Cd into the folder and clone the repository
 - Create a virtual environment following command and the name can be anything: virtualenv myenv
