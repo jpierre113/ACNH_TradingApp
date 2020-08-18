@@ -13,3 +13,10 @@ An Animal Crossing New Horizons trading application
 - Install Pillow: pip install pillow
 - Cd into the cloned repository and run python manage.py runserver
 - The application should run on localhost:8000
+
+## Improvements
+- Getting the items from the API connecting to the user's posts and profile
+- Adding filters for posts
+
+## Stretch Goals
+- An algorithm to match users based of what items they are looking for
